@@ -2,7 +2,7 @@
 
 Проект команды zozozo. В качестве основного ЯП используется <b>Python 3.6+</b>
 
-Для front-end используется <b>HTML, JavaScript</b>
+Для front-end используется <b>HTML, CSS, JavaScript</b>
 
 ## Библиотеки
 
