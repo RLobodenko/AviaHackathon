@@ -1,0 +1,3 @@
+# AviaHackathon
+
+Проект команды zozozo.
