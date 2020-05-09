@@ -11,6 +11,8 @@ class Hangar(object):
         self.packer.add_bin(*b)
 
         self.switch_list = []
+        self.rects = dict()
+        self.packers = dict()
         
         td = datetime.timedelta(days=1)
         start_date = datetime.date(2020, 5, 9)
