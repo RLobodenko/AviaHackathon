@@ -8,8 +8,6 @@ class Hangar(object):
     def __init__(self, height, width):
         
         b = (height, width)
-        self.packer.add_bin(*b)
-
         self.switch_list = []
         self.rects = dict()
         self.packers = dict()
@@ -20,7 +18,7 @@ class Hangar(object):
 
         while start_date <= end_date:
             self.rects.update({start_date: []})
-            self.packers.update({start_date: newPacker()})
+            self.packers.update({start_date: newPacker().add_bin(*b)})
             start_date += td
         
         
