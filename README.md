@@ -1,7 +1,8 @@
 # AviaHackathon
 
 Проект команды zozozo. В качестве основного ЯП используется Python 3.6+
-Для front-end используется HTML, JavaScript. 
+
+Для front-end используется <b>HTML, JavaScript</b>
 
 ## Библиотеки
 
