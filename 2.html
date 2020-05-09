@@ -1,0 +1,124 @@
+<html lang="ru">
+<head>
+
+		<META charset="utf-8">
+		<TITLE></TITLE>
+			
+
+
+<style>
+fieldset {
+width: 100px;
+}
+
+
+.img:first-of-type {
+    height: 100px;
+    width: 100px;
+    background: url(1.jpg) center no-repeat;
+    background-size: cover;
+}
+.img:second-of-type {
+    height: 100px;
+    width: 100px;
+    background: url(2.jpg) center no-repeat;
+    background-size: cover;
+}
+.img:three-of-type {
+    height: 100px;
+    width: 100px;
+    background: url(3.jpg) center no-repeat;
+    background-size: cover;
+}
+.img:four-of-type {
+    height: 100px;
+    width: 100px;
+    background: url(4.jpg) center no-repeat;
+    background-size: cover;
+}
+.img:five-of-type {
+    height: 100px;
+    width: 100px;
+    background: url(5.jpg) center no-repeat;
+    background-size: cover;
+}
+.img:six-of-type {
+    height: 100px;
+    width: 100px;
+    background: url(6.jpg) center no-repeat;
+    background-size: cover;
+}
+.img:seven-of-type {
+    height: 100px;
+    width: 100px;
+    background: url(7.jpg) center no-repeat;
+    background-size: cover;
+}
+.img:eight-of-type {
+    height: 100px;
+    width: 100px;
+    background: url(8.jpg) center no-repeat;
+    background-size: cover;
+}
+#Radio_1:checked ~ .img:first-of-type,
+#Radio_2:checked ~ .img:second-of-type, 
+#Radio_3:checked ~ .img:three-of-type,
+#Radio_4:checked ~ .img:four-of-type,
+#Radio_5:checked ~ .img:five-of-type,
+#Radio_6:checked ~ .img:six-of-type,
+#Radio_7:checked ~ .img:seven-of-type,
+#Radio_8:checked ~ .img:eight-of-type{
+    -webkit-box-shadow: inset 0 0 100vw rgba(0, 0, 0, .8);
+            box-shadow: inset 0 0 100vw rgba(0, 0, 0, .8);
+}
+
+</style>
+</head>
+<body>
+
+<table><td>
+				<form>
+				<FIELDSET > 
+					<LEGEND>Даты</LEGEND> 
+				<label>
+				<p>
+				
+				<input type="radio" name="Radio" value="0" id="Radio_1" checked> 07.05.2020</p>
+				</label>
+				<label>
+				<p><input type="radio" name="Radio" value="1"  id="Radio_2"> 08.05.2020</p>
+				</label>
+				<label>
+				<p><input type="radio" name="Radio" value="2"  id="Radio_3"> 09.05.2020</p>
+				</label>
+				<label>
+				<p><input type="radio" name="Radio" value="3"  id="Radio_4"> 10.05.2020</p>
+				</label>
+			<label>
+				<p><input type="radio" name="Radio" value="4"  id="Radio_5"> 11.05.2020</p>
+				</label><label>
+				<p><input type="radio" name="Radio" value="5"  id="Radio_6"> 12.05.2020</p>
+				</label><label>
+				<p><input type="radio" name="Radio" value="6"  id="Radio_7"> 13.05.2020</p>
+				</label>
+				<label>
+				<p><input type="radio" name="Radio" value="7"  id="Radio_8"> 14.05.2020</p>
+				</label>
+				</fieldset>
+				</form>
+				</td>
+					<td>
+				<fieldset>
+				<div class="img"></div>
+<div class="img"></div>
+<div class="img"></div>
+<div class="img"></div>
+<div class="img"></div>
+<div class="img"></div>
+<div class="img"></div>
+<div class="img"></div>
+				</fieldset>
+			</Td>
+</BODY>
+</html>
+
