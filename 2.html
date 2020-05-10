@@ -20,6 +20,24 @@ $(document).ready(function (){
         $(sel).click();
         
 });
+
+
+ var OK="251000 руб.\n";
+        var Problem="262000 руб.\n";
+        function getDate()
+        {
+            var today=new Date();
+            return today.toLocaleString()+"\n";
+        }
+        function CheckRadio(form,value)
+        {
+            if(value=="planes_1.jpg")
+                form.Letter.value=OK;
+            else
+                form.Letter.value=Problem;
+        }
+
+
 </script>
 
 <style>
@@ -136,6 +154,7 @@ padding-left: 100px;
 }
 
 
+
 </style>
 </head>
 <body>
@@ -159,10 +178,19 @@ padding-left: 100px;
 		</ul>
 </div>
 <br>
+
+
+<FORM NAME="Sel2">
+
+   
+
+
+
 <br>
 <br>
 <br>
-<div><pre class="text">Домодедово (DME)                                                                            <font color="6B6B6B">Прибыль за день:</font>     248 000 руб</pre></div>
+<div><pre class="text">Домодедово (DME)                                                                            <font color="6B6B6B">Прибыль за день:</font>    <TEXTAREA NAME="Letter" ROWS=1 COLS=15>
+    </TEXTAREA> </pre></div>
 <br>
 <br><br>
 <br><br>
@@ -174,27 +202,31 @@ padding-left: 100px;
 				<label>
 				<p>
 				
-				<input type='radio' name='scr' value='planes.jpg' /> 07.05.2020</p>
+				<input type='radio' name='scr' class="text1" value='planes.jpg' onClick="if(this.checked) CheckRadio(this.form,this.value);"checked> 07.05.2020</p>
+				
+				
+				
 				</label>
 				<label>
-				<p><input type='radio' name='scr' value='planes_1.jpg' /> 08.05.2020</p>
+				<p><input type='radio' name='scr' class="text2" value='planes_1.jpg' onClick="if(this.checked) CheckRadio(this.form,this.value);"/> 08.05.2020</p>
 				</label>
 				<label>
-				<p><input type='radio' name='scr' value='planes_2.jpg' /> 09.05.2020</p>
+				<p><input type='radio' name='scr' class="text3" value='planes_2.jpg' onClick="if(this.checked) CheckRadio(this.form,this.value);"/> 09.05.2020</p>
 				</label>
 				<label>
-				<p><input type='radio' name='scr' value='planes.jpg' /> 10.05.2020</p>
+				<p><input type='radio' name='scr' value='planes.jpg' onClick="if(this.checked) CheckRadio(this.form,this.value);"/> 10.05.2020</p>
 				</label>
 				<label>
-				<p><input type='radio' name='scr' value='planes_1.jpg' /> 11.05.2020</p>
+				<p><input type='radio' name='scr' value='planes_1.jpg' onClick="if(this.checked) CheckRadio(this.form,this.value);"/> 11.05.2020</p>
 				</label><label>
-				<p><input type='radio' name='scr' value='planes_2.jpg' /> 12.05.2020</p>
+				<p><input type='radio' name='scr' value='planes_2.jpg' onClick="if(this.checked) CheckRadio(this.form,this.value);"/> 12.05.2020</p>
 				</label><label>
-				<p><input type='radio' name='scr' value='planes.jpg' /> 13.05.2020</p>
+				<p><input type='radio' name='scr' value='planes.jpg' onClick="if(this.checked) CheckRadio(this.form,this.value);"/> 13.05.2020</p>
 				</label>
 				<label>
-				<p><input type='radio' name='scr' value='planes_2.jpg' /> 14.05.2020</p>
+				<p><input type='radio' name='scr' value='planes_1.jpg' onClick="if(this.checked) CheckRadio(this.form,this.value);"/> 14.05.2020</p>
 				</label>
+				
 				</fieldset>
 				</form>
 				</td>
@@ -210,15 +242,13 @@ padding-left: 100px;
 			<br>
 			<br>
 			<br>
+			
+			
+<BR><BR><p>
+			
 		<div class="div_2">	
 		<div class="div_1"> 
 		<p>Диаграмма загруженности</p>
-		<img src="Group47.png"></div></div>
-	
-			
-			
-			
-			
+		<img src="Group47.png"></div></div>	
 </BODY>
 </html>
-
